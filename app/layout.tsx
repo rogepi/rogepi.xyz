@@ -1,4 +1,12 @@
+import localFont from '@next/font/local'
+import Layout from '@/components/layout'
+import Provider from './providers'
 import './globals.css'
+
+const font = localFont({
+  src: '../public/font/NotoSansSC-Medium.otf',
+  display: 'optional',
+})
 
 export default function RootLayout({
   children,
@@ -6,13 +14,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
-      <body>{children}</body>
+    <html lang="zh-Hans">
+      <body className={font.className}>
+        <Provider>
+          <Layout>{children}</Layout>
+        </Provider>
+      </body>
     </html>
   )
 }
