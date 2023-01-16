@@ -1,22 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.tsx",
-    "./pages/**/*.tsx",
-    "./components/**/*.tsx",
-    "./ui/**/*.tsx"
+    './app/**/*.tsx',
+    './pages/**/*.tsx',
+    './components/**/*.tsx',
+    './ui/**/*.tsx',
   ],
   theme: {
     extend: {
-      container:{
+      container: {
         center: true,
-        padding: "1.5rem",
+        padding: '1.5rem',
         screens: {
-          "2xl": "1440px",
+          '2xl': '1440px',
         },
-      }
+      },
     },
   },
-  darkMode:"class",
+  darkMode: 'class',
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   plugins: [],
 }
