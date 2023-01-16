@@ -4,13 +4,18 @@
 
 @layer components {
   .btn {
-    @apply px-2 py-1 flex items-center justify-center rounded-lg
-  text-gray-800 dark:text-gray-200 bg-gray-200  dark:bg-neutral-600
-    hover:ring-2 ring-gray-300 transition-all;
+    @apply px-4 py-2 flex items-center justify-center rounded-lg
+    border hover:bg-zinc-100 dark:border-zinc-800 dark:hover:bg-zinc-800
+    focus:ring-2 focus:ring-black focus:ring-offset-2;
+  }
+  .btn-p {
+    @apply px-8 py-2 flex items-center justify-center rounded-lg
+    text-white bg-black hover:bg-neutral-800 dark:text-black dark:bg-white dark:hover:bg-neutral-200
+    focus:ring-2 focus:ring-black focus:ring-offset-2;
   }
 
   .link {
-    @apply flex items-center gap-1 px-2 py-1 rounded-lg
+    @apply flex items-center gap-2 px-2 py-1 rounded-lg
     transition-colors bg-transparent  hover:bg-gray-200 dark:hover:bg-neutral-800;
   }
 }
