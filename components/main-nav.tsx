@@ -6,12 +6,22 @@ import { NavItem } from '~/lib/types'
 import { cn } from '~/lib/utils'
 import Logo from './logo'
 import { Button } from './ui/button'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '~/components/ui/dropdown-menu'
+import { ChevronDown } from 'lucide-react'
+import { navItems } from '~/config'
 
 export default function MainNav({ items }: { items: NavItem[] }) {
   const path = usePathname()
+  const mobileNavTitle =
+    navItems.find((item) => item.href === path)?.title || '首页'
 
   return (
-    <div className="flex gap-6 md:gap-10">
+    <div className="flex items-center gap-6 md:gap-10">
       <Logo />
       <div className="hidden gap-6 sm:flex md:gap-10">
         {items?.map((item) => {
@@ -29,6 +39,26 @@ export default function MainNav({ items }: { items: NavItem[] }) {
           )
         })}
       </div>
+      <DropdownMenu>
+        <DropdownMenuTrigger
+          className="flex items-center justify-center sm:hidden"
+          asChild
+        >
+          <Button variant="ghost" size="sm">
+            <span className=" mr-2">{mobileNavTitle}</span>
+            <ChevronDown size="20" />
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent align="start">
+          {items.map((item) => {
+            return (
+              <DropdownMenuItem key={item.title}>
+                <Link href={item.href}>{item.title}</Link>
+              </DropdownMenuItem>
+            )
+          })}
+        </DropdownMenuContent>
+      </DropdownMenu>
     </div>
   )
 }
