@@ -1,6 +1,7 @@
 import Hero from '../public/images/pmb.png'
 
 import Image from 'next/image'
+import Tiptap from '~/components/tiptap'
 
 export default function Home() {
   return (
@@ -21,6 +22,9 @@ export default function Home() {
             掘金
           </button>
         </div>
+      </section>
+      <section className="container max-w-[800px] mt-10">
+        <Tiptap />
       </section>
       <section className="container max-w-[800px] mt-10">
         <h1 className="my-5 text-2xl font-bold sm:text-3xl lg:text-4xl">
