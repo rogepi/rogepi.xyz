@@ -1,3 +1,9 @@
 export default function GuestBook() {
-  return <h1>GuestBook </h1>
+  return (
+    <section className="container">
+      <h1 className="my-5 text-3xl font-bold sm:text-4xl lg:text-5xl">
+        留言板
+      </h1>
+    </section>
+  )
 }
