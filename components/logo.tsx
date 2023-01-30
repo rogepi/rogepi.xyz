@@ -1,17 +1,12 @@
-import localFont from '@next/font/local'
+import Image from 'next/image'
 import Link from 'next/link'
 
-const font = localFont({
-  src: '../public/font/GuanZhi-8px.ttf',
-  display: 'optional',
-})
+import imgSrc from '../public/images/ashe.png'
 
 export default function Logo() {
   return (
     <Link className="flex items-center justify-center" href="/">
-      <span className="text-3xl 2xl:text-4xl" style={font.style}>
-        rogepi
-      </span>
+      <Image src={imgSrc} alt="rogepi" width={30} height={30} />
     </Link>
   )
 }

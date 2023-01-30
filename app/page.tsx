@@ -1,13 +1,11 @@
-import Hero from '../public/images/pmb.png'
-
 import Image from 'next/image'
-import Tiptap from '~/components/tiptap'
 import { Button } from '~/components/ui/button'
 
+import Hero from '../public/images/pmb.png'
 export default function Home() {
   return (
     <>
-      <section className="container mt-10 max-w-[800px]">
+      <section className="container mt-10">
         <Image src={Hero} width={150} alt="Hero image" priority />
         <h1 className="my-5 text-3xl font-bold sm:text-4xl lg:text-5xl">
           你好呀 我是阿荣！
@@ -20,10 +18,8 @@ export default function Home() {
           <Button variant="subtle">掘金</Button>
         </div>
       </section>
-      <section className="container mt-10 max-w-[800px]">
-        <Tiptap />
-      </section>
-      <section className="container mt-10 max-w-[800px]">
+
+      <section className="container mt-10">
         <h1 className="my-5 text-2xl font-bold sm:text-3xl lg:text-4xl">
           最新文章
         </h1>

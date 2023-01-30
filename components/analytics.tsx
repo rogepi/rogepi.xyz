@@ -1,6 +1,6 @@
 'use client'
 import { Analytics } from '@vercel/analytics/react'
 
-export function VercelAnalytics() {
+export default function VercelAnalytics() {
   return <Analytics />
 }

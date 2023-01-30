@@ -18,13 +18,13 @@ specifiers:
   eslint-plugin-tailwindcss: ^3.8.2
   lucide-react: ^0.107.0
   next: 13.1.5
-  next-auth: ^4.18.10
+  next-auth: ^4.19.0
   next-themes: ^0.2.1
   postcss: ^8.4.21
   prisma: ^4.9.0
   react: 18.2.0
   react-dom: 18.2.0
-  tailwind-merge: ^1.8.1
+  tailwind-merge: ^1.9.0
   tailwindcss: ^3.2.4
   tailwindcss-animate: ^1.0.5
   typescript: 4.9.4
@@ -42,12 +42,12 @@ dependencies:
   eslint-config-next: 13.1.5_7uibuqfxkfaozanbtbziikiqje
   lucide-react: 0.107.0_react@18.2.0
   next: 13.1.5_biqbaboplfbrettd7655fr4n2y
-  next-auth: 4.18.10_s6zlkfvllybxhmcq5pkr2zsuza
+  next-auth: 4.19.0_s6zlkfvllybxhmcq5pkr2zsuza
   next-themes: 0.2.1_s6zlkfvllybxhmcq5pkr2zsuza
   prisma: 4.9.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  tailwind-merge: 1.8.1
+  tailwind-merge: 1.9.0
   tailwindcss-animate: 1.0.5_tailwindcss@3.2.4
   typescript: 4.9.4
 
@@ -2423,8 +2423,8 @@ packages:
   /natural-compare/1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
-  /next-auth/4.18.10_s6zlkfvllybxhmcq5pkr2zsuza:
-    resolution: {integrity: sha512-j2JVyH7byZ2eqXlOqNLpOO7gOlAkTzblxLZNeZihKCeIabYFHNdAJgUvVahhnHs3pZ4xaa3ZqGQHgi1uE97L9Q==}
+  /next-auth/4.19.0_s6zlkfvllybxhmcq5pkr2zsuza:
+    resolution: {integrity: sha512-56Pc/Ni0cxfrVDAz2KeWdj+VXvABbHF1grgFR4+ktXbRmKQOiMU9uyMwhasBQkbL+pRrWujO0Ib/bwkP0oZS4g==}
     peerDependencies:
       next: ^12.2.5 || ^13
       nodemailer: ^6.6.5
@@ -3168,8 +3168,8 @@ packages:
       tslib: 2.4.1
     dev: false
 
-  /tailwind-merge/1.8.1:
-    resolution: {integrity: sha512-+fflfPxvHFr81hTJpQ3MIwtqgvefHZFUHFiIHpVIRXvG/nX9+gu2P7JNlFu2bfDMJ+uHhi/pUgzaYacMoXv+Ww==}
+  /tailwind-merge/1.9.0:
+    resolution: {integrity: sha512-coziXxViLHbVtFvD1+jwSu+UmDJSFX4dhj9ZuqHCuhTzu9Wk5wMedAz5AVY3uUYw95TaO7NwgUS/dLGcWvtgqw==}
     dev: false
 
   /tailwindcss-animate/1.0.5_tailwindcss@3.2.4:
