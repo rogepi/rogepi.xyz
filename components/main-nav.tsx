@@ -11,18 +11,15 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '~/components/ui/dropdown-menu'
-import { ChevronDown, Menu } from 'lucide-react'
-import { navItems } from '~/config'
+import { Menu } from 'lucide-react'
 
 export default function MainNav({ items }: { items: NavItem[] }) {
   const path = usePathname()
   const router = useRouter()
 
-  const mobileNavTitle =
-    navItems.find((item) => item.href === path)?.title || '首页'
-
-  const navTo = (href: string) => {
+  const nav = (href: string) => {
     router.push(href)
+    window.scrollTo({ top: 0 })
   }
 
   return (
@@ -50,10 +47,6 @@ export default function MainNav({ items }: { items: NavItem[] }) {
         >
           <Button variant="ghost" size="sm">
             <Menu size="20" />
-            {/* <span className="ml-2 text-base font-semibold">
-              {mobileNavTitle}
-            </span> */}
-            {/* <ChevronDown size="20" /> */}
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="start">
@@ -62,7 +55,7 @@ export default function MainNav({ items }: { items: NavItem[] }) {
               <DropdownMenuItem
                 key={item.title}
                 onClick={() => {
-                  navTo(item.href)
+                  nav(item.href)
                 }}
               >
                 {item.title}

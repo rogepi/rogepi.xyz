@@ -5,9 +5,9 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "0.75rem",
+      padding: '0.75rem',
       screens: {
-        "2xl": "800px",
+        '2xl': '800px',
       },
     },
     extend: {
@@ -27,7 +27,7 @@ module.exports = {
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],
   future: {
     hoverOnlyWhenSupported: true,
   },

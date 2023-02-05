@@ -15,12 +15,12 @@ export default function LoginButton() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button>登录</Button>
+        <Button>Login</Button>
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>访客登录</DialogTitle>
-          <DialogDescription>使用以下OAuth登录</DialogDescription>
+          <DialogTitle>Guest login</DialogTitle>
+          <DialogDescription>Login using the following OAuth</DialogDescription>
         </DialogHeader>
         <div className="space-x-4">
           <Button onClick={() => signIn('github')}>Github</Button>
